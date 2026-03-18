@@ -9,7 +9,7 @@ require("mason-lspconfig").setup({
         "ts_ls", "eslint",
         "astro",
         "tailwindcss",
-        "intelephense",
+        "phpactor",
         "lua_ls",
         "pyright",
         "gopls",
