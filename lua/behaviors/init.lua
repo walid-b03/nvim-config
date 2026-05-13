@@ -1,4 +1,4 @@
-require("behavior.autocommands")
+require("behaviors.autocommands")
 
 -- Identation --
 ----------------
