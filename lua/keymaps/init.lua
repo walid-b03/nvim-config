@@ -2,7 +2,7 @@
 -------------------
 vim.keymap.set("n", "<leader>fe", vim.cmd.Ex)
 
--- sourse out --
+-- source out --
 ----------------
 vim.keymap.set("n", "<leader><leader>", vim.cmd.so)
 

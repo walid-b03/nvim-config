@@ -1,4 +1,4 @@
-# Neovim v0.11 Configuration Setup
+# Neovim Configuration Setup
 
 This is my personal configuration files for Neovim `v0.12`. Inspired by ThePrimeAgen's setup and tailored to integrate in my zen-full Arch Linux setup with SwayWM and WezTerm.
 
