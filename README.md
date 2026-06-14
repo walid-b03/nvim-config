@@ -61,4 +61,3 @@ nvim
 ```
 
 The first startup will automatically install `lazy.nvim` and all configured plugins.
-

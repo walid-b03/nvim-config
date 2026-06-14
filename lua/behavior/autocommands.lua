@@ -6,6 +6,17 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     callback = function() vim.highlight.on_yank() end,
 })
 
+-- enable line wrap for markdown and text --
+--------------------------------------------
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = { "markdown", "text" },
+    callback = function()
+        vim.opt_local.wrap = true
+        vim.opt_local.linebreak = true
+        vim.opt_local.textwidth = 120
+    end,
+})
+
 -- remove trailing white spaces --
 ----------------------------------
 vim.api.nvim_create_autocmd('BufWritePre', {
