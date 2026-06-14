@@ -1,8 +1,6 @@
 local ensure_parsers = {
-    "astro", "bash", "blade", "c", "cpp",
-    "css", "go", "html", "javascript", "lua",
-    "markdown", "markdown_inline", "php", "php_only", "python", "query",
-    "sql", "typescript", "tsx", "vim", "vimdoc",
+    "astro", "bash", "blade", "c", "cpp", "css", "go", "html", "javascript", "lua", "markdown", "markdown_inline",
+    "php", "php_only", "python", "query", "sql", "typescript", "tsx", "vim", "vimdoc", "svelt",
 }
 
 local installed = require('nvim-treesitter').get_installed()

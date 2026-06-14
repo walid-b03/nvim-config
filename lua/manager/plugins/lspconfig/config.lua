@@ -6,15 +6,7 @@ require("mason").setup({ ui = { border = "rounded" } })
 
 require("mason-lspconfig").setup({
     ensure_installed = {
-        "ts_ls", "eslint",
-        "astro",
-        "intelephense",
-        "lua_ls",
-        "pyright",
-        "gopls",
-        "clangd",
-        "marksman",
-        "svelte"
+        "ts_ls", "eslint", "astro", "intelephense", "lua_ls", "pyright", "gopls", "clangd", "marksman", "svelte"
     },
     handlers = {
         function (server_name)
