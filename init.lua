@@ -1,6 +1,4 @@
-vim.loader.enable()
-vim.g.mapleader = " "
-require("behaviors")
+require("manager")
+require("behavior")
 require("keymaps")
-require("plugins")
 
