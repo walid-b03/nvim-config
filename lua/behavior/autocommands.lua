@@ -28,14 +28,12 @@ vim.api.nvim_create_autocmd('BufWritePre', {
     end,
 })
 
--- write unamed buffers --
+-- name unamed buffers --
 --------------------------
-vim.api.nvim_create_autocmd('BufWritePre', {
-  pattern = '',
+vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
-    if vim.fn.expand('%:t') == '' then
-      local dated = os.date('%Y_%m_%d_%H%M%S') .. '.md'
-      vim.cmd('file ' .. dated)
+    if vim.api.nvim_buf_get_name(0) then
+      vim.cmd("file " .. os.date("%Y_%m_%d_%H%M%S.md"))
     end
-  end,
+  end
 })
