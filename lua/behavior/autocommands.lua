@@ -32,8 +32,8 @@ vim.api.nvim_create_autocmd('BufWritePre', {
 --------------------------
 vim.api.nvim_create_autocmd("VimEnter", {
   callback = function()
-    if vim.api.nvim_buf_get_name(0) then
-      vim.cmd("file " .. os.date("%Y_%m_%d_%H%M%S.md"))
+    if vim.api.nvim_buf_get_name(0) == "" then
+      vim.cmd("file " .. os.date("%Y_%m_%d.md"))
     end
   end
 })

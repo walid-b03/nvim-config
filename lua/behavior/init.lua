@@ -30,7 +30,7 @@ vim.opt.showmode = true
 
 -- Clipboard --
 ---------------
-vim.schedule(function() vim.opt.clipboard = "unnamedplus" end)
+vim.opt.clipboard = "unnamedplus"
 
 -- line wrap --
 ---------------
