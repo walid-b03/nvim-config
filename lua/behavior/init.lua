@@ -24,10 +24,6 @@ vim.opt.relativenumber = true
 ----------------
 vim.opt.mouse = ""
 
--- Show mode --
----------------
-vim.opt.showmode = true
-
 -- Clipboard --
 ---------------
 vim.opt.clipboard = "unnamedplus"
