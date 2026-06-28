@@ -17,6 +17,18 @@ vim.api.nvim_create_autocmd("FileType", {
     end,
 })
 
+-- force spaces over tabs for all languages --
+----------------------------------------------
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "*",
+    callback = function()
+        vim.bo.expandtab = true
+        vim.bo.tabstop = 4
+        vim.bo.softtabstop = 4
+        vim.bo.shiftwidth = 4
+    end,
+})
+
 -- remove trailing white spaces --
 ----------------------------------
 vim.api.nvim_create_autocmd('BufWritePre', {
